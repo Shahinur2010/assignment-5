@@ -24,7 +24,100 @@
       </div>
    </header> 
    <main>
-    <div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mt-4 px-2 gap-2">
+      <!-- cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-4 gap-2 px-2 ">
+        <div class="card w-auto bg-pink-100 shadow-xl">
+          <figure class="px-10 pt-10">
+            <img src="./images/triangle.png" alt="" class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Triangle</h2>
+            <p>Area (A) = 0.5 <i class="fa-solid fa-xmark"></i> b <i class="fa-solid fa-xmark"></i> h</p>
+            <p><input type="text" placeholder="b"> cm
+              <input type="text" placeholder="h"> cm
+            </p>
+            <div class="card-actions">
+              <button class="btn btn-primary case normal-case">Calculate</button>
+            </div>
+          </div>
+        </div>
+        <div class="card w-auto bg-pink-100 shadow-xl">
+          <figure class="px-10 pt-10">
+            <img src="./images/rectangle.png" alt="" class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Rectangle</h2>
+            <p>Area (A) = w <i class="fa-solid fa-xmark"></i> l</p>
+            <p><input type="text" placeholder="w"> cm
+              <input type="text" placeholder="l"> cm</p>
+            <div class="card-actions">
+              <button class="btn btn-primary case normal-case">Calculate</button>
+            </div>
+          </div>
+        </div>
+        <div class="card w-auto bg-pink-100 shadow-xl">
+          <figure class="px-10 pt-10">
+            <img src="./images/parallelogram.png" alt="" class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Parallelogram</h2>
+            <p>b=10cm, h=12cm</p>
+            <p>Area (A) = b <i class="fa-solid fa-xmark"></i> h</p>
+            <div class="card-actions">
+              <button class="btn btn-primary case normal-case">Calculate</button>
+            </div>
+          </div>
+        </div>
+        <div class="card w-auto bg-pink-100 shadow-xl">
+          <figure class="px-10 pt-10">
+            <img src="./images/rhombus.png" alt="" class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Rhombus</h2>
+            <p>d1 = 16cm d2 = 8cm</p>
+            <p>Area (A) = 0.5 <i class="fa-solid fa-xmark"></i> d1 <i class="fa-solid fa-xmark"></i> d2</p>
+            <div class="card-actions">
+              <button class="btn btn-primary case normal-case">Calculate</button>
+            </div>
+          </div>
+        </div>
+        <div class="card w-auto bg-pink-100 shadow-xl">
+          <figure class="px-10 pt-10">
+            <img src="./images/pentagon.png" alt="" class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Pentagon</h2>
+            <p>p = 6cm b = 10cm</p>
+            <p>Area (A) = 0.5 <i class="fa-solid fa-xmark"></i> p <i class="fa-solid fa-xmark"></i> b</p>
+            <div class="card-actions">
+              <button class="btn btn-primary case normal-case">Calculate</button>
+            </div>
+          </div>
+        </div>
+        <div class="card w-auto bg-pink-100 shadow-xl">
+          <figure class="px-10 pt-10">
+            <img src="./images/ellipse.png" alt="" class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Ellipse</h2>
+            <p>a = 10cm b = 4cm</p>
+            <p>Area (A) = 3.14 <i class="fa-solid fa-xmark"></i> a <i class="fa-solid fa-xmark"></i> b</p>
+            <div class="card-actions">
+              <button class="btn btn-primary case normal-case">Calculate</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- results -->
+      <div class="">
+        <h3 class="underline text-xl font-semibold text-center">Area Calculation</h3>
+
+      </div>
+    </div>
+   </main>
+    
       
 </body>
 <script src="js/common.js"></script>

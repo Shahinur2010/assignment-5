@@ -19,8 +19,8 @@ document.getElementById('btn-triangle').addEventListener('click', function () {
   }
 
   triangleAreaResult = 0.5 * triangleB * triangleH;
-  const result = parseFloat(triangleAreaResult.toFixed(2));
-  
+  const result = parseFloat(triangleAreaResult.toFixed(2)) + "cm<sup>2</sup>";
+
   const id = document.getElementById('triangle').innerText;
 
   displayData(id, result);
@@ -43,8 +43,8 @@ document.getElementById('btn-rectangle').addEventListener('click', function () {
   }
 
   rectangleAreaResult = rectangleW * rectangleL;
-  const result = parseFloat(rectangleAreaResult.toFixed(2));
-  
+  const result = parseFloat(rectangleAreaResult.toFixed(2)) + "cm<sup>2</sup>";
+
   const id = document.getElementById('rectangle').innerText;
 
   displayData(id, result);
@@ -56,8 +56,8 @@ document.getElementById('btn-parallelogram').addEventListener('click', function 
   const parallelogramH = getId('parallelogram-h-text');
 
   parallelogramAreaResult = parallelogramB * parallelogramH;
-  const result = parseFloat(parallelogramAreaResult.toFixed(2));
-  
+  const result = parseFloat(parallelogramAreaResult.toFixed(2)) + "cm<sup>2</sup>";
+
   const id = document.getElementById('parallelogram').innerText;
   displayData(id, result);
 })
@@ -68,8 +68,8 @@ document.getElementById('btn-rhombus').addEventListener('click', function () {
   const rhombusD2 = getId('rhombus-d2-text');
 
   rhombusAreaResult = 0.5 * rhombusD1 * rhombusD2;
-  const result = parseFloat(rhombusAreaResult.toFixed(2));
-  
+  const result = parseFloat(rhombusAreaResult.toFixed(2)) + "cm<sup>2</sup>";
+
   const id = document.getElementById('rhombus').innerText;
 
   displayData(id, result);
@@ -81,7 +81,7 @@ document.getElementById('btn-pentagon').addEventListener('click', function () {
   const pentagonB = getId('pentagon-b-text');
 
   pentagonAreaResult = 0.5 * pentagonP * pentagonB;
-  const result = parseFloat(pentagonAreaResult.toFixed(2));
+  const result = parseFloat(pentagonAreaResult.toFixed(2)) + "cm<sup>2</sup>";
   const id = document.getElementById('pentagon').innerText;
 
   displayData(id, result);
@@ -93,12 +93,8 @@ document.getElementById("btn-ellipse").addEventListener("click", function () {
   const ellipseB = getId('ellipse-b-text');
 
   ellipseAreaResult = 3.14 * ellipseA * ellipseB;
-  const result = parseFloat(ellipseAreaResult.toFixed(2));
+  const result = parseFloat(ellipseAreaResult.toFixed(2)) + "cm<sup>2</sup>";
   const id = document.getElementById('ellipse').innerText;
 
   displayData(id, result);
 });
-
-
-
-

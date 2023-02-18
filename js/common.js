@@ -7,7 +7,7 @@ function displayData(id, result) {
       <td>${id}</td>
       <td>${result}</td>
       <td>
-      <button class="btn btn-md bg-blue-500 text-white case normal-case font-semibold">Convert to m<sup>2</sup></button>
+      <button class="btn btn-primary case normal-case">Convert to m<sup>2</sup></button>
       </td>
     `;
     container.appendChild(tr);

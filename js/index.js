@@ -23,8 +23,7 @@ document.getElementById('btn-triangle').addEventListener('click', function () {
   
   const id = document.getElementById('triangle').innerText;
 
-  displayData(id, result)
-  console.log(id, result);
+  displayData(id, result);
 })
 
 document.getElementById('btn-rectangle').addEventListener('click', function () {
@@ -48,64 +47,58 @@ document.getElementById('btn-rectangle').addEventListener('click', function () {
   
   const id = document.getElementById('rectangle').innerText;
 
-  displayData(id, result)
-  console.log(id, result);
-  
+  displayData(id, result);
 })
 
 document.getElementById('btn-parallelogram').addEventListener('click', function () {
   serial += 1;
-  const parallelogramB = document.getElementById('parallelogram-b-text').innerText;
-  const parallelogramH = document.getElementById('parallelogram-h-text').innerText;
+  const parallelogramB = get('parallelogram-b-text');
+  const parallelogramH = getId('parallelogram-h-text');
 
   parallelogramAreaResult = parallelogramB * parallelogramH;
   const result = parseFloat(parallelogramAreaResult.toFixed(2));
   
   const id = document.getElementById('parallelogram').innerText;
-
-  displayData(id, result)
-  console.log(id, result);
+  displayData(id, result);
 })
 
 document.getElementById('btn-rhombus').addEventListener('click', function () {
   serial += 1;
-  const rhombusD1 = document.getElementById('rhombus-d1-text').innerText;
-  const rhombusD2 = document.getElementById('rhombus-d2-text').innerText;
+  const rhombusD1 = get('rhombus-d1-text');
+  const rhombusD2 = getId('rhombus-d2-text');
 
   rhombusAreaResult = 0.5 * rhombusD1 * rhombusD2;
   const result = parseFloat(rhombusAreaResult.toFixed(2));
   
   const id = document.getElementById('rhombus').innerText;
 
-  displayData(id, result)
-  console.log(id, result);
+  displayData(id, result);
 })
 
 document.getElementById('btn-pentagon').addEventListener('click', function () {
   serial += 1;
-  const pentagonP = document.getElementById('pentagon-p-text').innerText;
-  const pentagonB = document.getElementById('pentagon-b-text').innerText;
+  const pentagonP = get('pentagon-p-text');
+  const pentagonB = getId('pentagon-b-text');
 
   pentagonAreaResult = 0.5 * pentagonP * pentagonB;
   const result = parseFloat(pentagonAreaResult.toFixed(2));
   const id = document.getElementById('pentagon').innerText;
 
-  displayData(id, result)
-  console.log(id, result);
-  
+  displayData(id, result);
 })
 
 document.getElementById("btn-ellipse").addEventListener("click", function () {
   serial += 1;
-  const ellipseA = document.getElementById('ellipse-a-text').innerText;
-  const ellipseB = document.getElementById('ellipse-b-text').innerText;
+  const ellipseA = get('ellipse-a-text');
+  const ellipseB = getId('ellipse-b-text');
 
   ellipseAreaResult = 3.14 * ellipseA * ellipseB;
   const result = parseFloat(ellipseAreaResult.toFixed(2));
   const id = document.getElementById('ellipse').innerText;
 
-  displayData(id, result)
-  console.log(id, result);
-
+  displayData(id, result);
 });
+
+
+
 

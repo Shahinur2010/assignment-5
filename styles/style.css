@@ -1,0 +1,9 @@
+.btn-primary{
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    border: 0;
+    height: 48px;
+    background: blue;
+    border-radius: 5px;
+}

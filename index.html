@@ -19,7 +19,7 @@
           <p class="text-xl">Geometry Genius</p>
         </div>
         <div class="navbar-end">
-          <button class="btn btn-primary">Blog</button>
+          <button id="btn-blog" class="btn btn-primary">Blog</button>
         </div>
       </div>
    </header> 
@@ -33,13 +33,13 @@
           </figure>
           <div class="card-body items-center text-center">
             <h2 class="card-title">Triangle</h2>
-            <p>Area (A) = 0.5 <i class="fa-solid fa-xmark"></i> b <i class="fa-solid fa-xmark"></i> h</p>
-            <div class="flex">
-              <input type="text" placeholder="b"> cm
-              <input type="text" placeholder="h"> cm
+            <p><span id="triangle-area">Area (A)</span> = 0.5 <i class="fa-solid fa-xmark"></i> <span id="triangle-b">b</span> <i class="fa-solid fa-xmark"></i> <span id="triangle-h">h</span> </p>
+            <div class="flex gap-4">
+              <input id="field-b" class="w-16 text-center" type="text" placeholder="b"> cm
+              <input id="field-h" class="w-16 text-center" type="text" placeholder="h"> cm
             </div>
             <div class="card-actions">
-              <button class="btn btn-primary case normal-case">Calculate</button>
+              <button id="btn-triangle" class="btn btn-primary case normal-case">Calculate</button>
             </div>
           </div>
         </div>
@@ -50,12 +50,12 @@
           <div class="card-body items-center text-center">
             <h2 class="card-title">Rectangle</h2>
             <p>Area (A) = w <i class="fa-solid fa-xmark"></i> l</p>
-            <div class="flex">
-              <input type="text" placeholder="w"> cm
-              <input type="text" placeholder="l"> cm
+            <div class="flex gap-4">
+              <input id="field-w" class="w-16 text-center" type="text" placeholder="w">cm
+              <input id="field-l" class="w-16 text-center" type="text" placeholder="l">cm
             </div>
             <div class="card-actions">
-              <button class="btn btn-primary case normal-case">Calculate</button>
+              <button id="btn-rectangle" class="btn btn-primary case normal-case">Calculate</button>
             </div>
           </div>
         </div>
@@ -68,7 +68,7 @@
             <p>b=10cm, h=12cm</p>
             <p>Area (A) = b <i class="fa-solid fa-xmark"></i> h</p>
             <div class="card-actions">
-              <button class="btn btn-primary case normal-case">Calculate</button>
+              <button id="btn-parallelogram" class="btn btn-primary case normal-case">Calculate</button>
             </div>
           </div>
         </div>
@@ -81,7 +81,7 @@
             <p>d1 = 16cm d2 = 8cm</p>
             <p>Area (A) = 0.5 <i class="fa-solid fa-xmark"></i> d1 <i class="fa-solid fa-xmark"></i> d2</p>
             <div class="card-actions">
-              <button class="btn btn-primary case normal-case">Calculate</button>
+              <button id="btn-rhombus" class="btn btn-primary case normal-case">Calculate</button>
             </div>
           </div>
         </div>
@@ -94,7 +94,7 @@
             <p>p = 6cm b = 10cm</p>
             <p>Area (A) = 0.5 <i class="fa-solid fa-xmark"></i> p <i class="fa-solid fa-xmark"></i> b</p>
             <div class="card-actions">
-              <button class="btn btn-primary case normal-case">Calculate</button>
+              <button id="btn-pentagon" class="btn btn-primary case normal-case">Calculate</button>
             </div>
           </div>
         </div>
@@ -107,7 +107,7 @@
             <p>a = 10cm b = 4cm</p>
             <p>Area (A) = 3.14 <i class="fa-solid fa-xmark"></i> a <i class="fa-solid fa-xmark"></i> b</p>
             <div class="card-actions">
-              <button class="btn btn-primary case normal-case">Calculate</button>
+              <button id="btn-ellipse" class="btn btn-primary case normal-case">Calculate</button>
             </div>
           </div>
         </div>

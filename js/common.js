@@ -23,17 +23,20 @@ function setInput(id, number){
     setDataField.value = number;
 }
 
-// common function to display result
-function displayData(id, result) {
+// common function to display data
+function displayData(nameOfP, priceOfP, quantityOfp, resultP) {
     const container = document.getElementById("table-container");
     const tr = document.createElement("tr");
     tr.innerHTML = `
       <td>${serial}</td>
-      <td>${id}</td>
-      <td>${result}</td>
+      <td>${nameOfP}</td>
+      <td>${priceOfP}</td>
+      <td>${quantityOfp}</td>
+      <td>${resultP}</td>
       <td>
-      <button class="btn btn-sm btn-blue-500">Convert-to-m2</button>
+      <button class="btn btn-sm btn-red-500">Square</button>
       </td>
+      
     `;
     container.appendChild(tr);
   }
